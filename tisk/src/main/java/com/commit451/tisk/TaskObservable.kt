@@ -9,7 +9,7 @@ import io.reactivex.exceptions.CompositeException
 import io.reactivex.exceptions.Exceptions
 import io.reactivex.plugins.RxJavaPlugins
 
-class TaskObservable<T>(private val task: Task<T>) : Observable<T>() {
+internal class TaskObservable<T>(private val task: Task<T>) : Observable<T>() {
 
     override fun subscribeActual(observer: Observer<in T>) {
 
